@@ -1,13 +1,15 @@
 import React from 'react';
 
-// Components
-import PageDefault from '../../components/PageDefault';
+// Layout
+import LayoutDefault from '../Layouts/Default';
 
 function Home() {
   return (
-    <PageDefault>
-      <h1>Home</h1>
-    </PageDefault>
+    <LayoutDefault>
+      <div className="container">
+        <h1>Home</h1>
+      </div>
+    </LayoutDefault>
   );
 }
 

@@ -1,12 +1,16 @@
 import React from 'react';
-import PageDefault from '../../../components/PageDefault';
+
+//Layout
+import LayoutDefault from '../../Layouts/Default';
 
 function NotFound() {
-  return (
-    <PageDefault>
-      <h1>Página não encontrada!</h1>
-    </PageDefault>
-  );
+    return (
+        <LayoutDefault>
+            <center>
+                <h1>Página não encontrada!</h1>
+            </center>
+        </LayoutDefault>
+    );
 }
 
 export default NotFound;
