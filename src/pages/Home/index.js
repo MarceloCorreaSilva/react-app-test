@@ -1,7 +1,6 @@
 import React from 'react';
 
 // Components
-import Menu from '../../components/Menu';
 import PageDefault from '../../components/PageDefault';
 
 function Home() {
