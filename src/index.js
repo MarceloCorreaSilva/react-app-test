@@ -6,15 +6,15 @@ import * as serviceWorker from './serviceWorker';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 // Pages
+import NotFound from './pages/Error/NotFound';
 import Home from './pages/Home';
-import Fail from './pages/404';
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Switch>
         <Route path="/" component={Home} exact />
-        <Route component={Fail} />
+        <Route component={NotFound} />
       </Switch>
     </BrowserRouter>
   </React.StrictMode>,

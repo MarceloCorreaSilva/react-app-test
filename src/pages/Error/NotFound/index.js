@@ -1,7 +1,7 @@
 import React from 'react';
-import PageDefault from '../../components/PageDefault';
+import PageDefault from '../../../components/PageDefault';
 
-function Fail() {
+function NotFound() {
   return (
     <PageDefault>
       <h1>Página não encontrada!</h1>
@@ -9,4 +9,4 @@ function Fail() {
   );
 }
 
-export default Fail;
+export default NotFound;
