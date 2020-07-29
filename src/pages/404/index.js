@@ -1,8 +1,11 @@
 import React from 'react';
+import PageDefault from '../../components/PageDefault';
 
 function Fail() {
   return (
-    <h1>Página não encontrada!</h1>
+    <PageDefault>
+      <h1>Página não encontrada!</h1>
+    </PageDefault>
   );
 }
 

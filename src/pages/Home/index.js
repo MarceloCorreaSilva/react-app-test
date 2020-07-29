@@ -2,10 +2,13 @@ import React from 'react';
 
 // Components
 import Menu from '../../components/Menu';
+import PageDefault from '../../components/PageDefault';
 
 function Home() {
   return (
-    <Menu />
+    <PageDefault>
+      <h1>Home</h1>
+    </PageDefault>
   );
 }
 
