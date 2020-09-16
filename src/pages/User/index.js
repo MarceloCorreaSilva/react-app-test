@@ -22,11 +22,9 @@ function User() {
     name: '',
   });
 
-  function searchUsers() {
-    return userRepository.getAll()
-      .then((usersFromServer) => {
-        setUsers(usersFromServer);
-      });
+  async function searchUsers() {
+    const usersFromServer = await userRepository.getAll();
+    setUsers(usersFromServer);
   }
 
   useEffect(() => {
