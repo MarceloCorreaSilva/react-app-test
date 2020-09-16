@@ -8,6 +8,7 @@ function Home() {
     <LayoutDefault>
       <div className="container">
         <h1>Home</h1>
+        <h2>Test</h2>
       </div>
     </LayoutDefault>
   );
