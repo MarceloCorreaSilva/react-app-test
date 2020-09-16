@@ -9,6 +9,7 @@ function Home() {
       <div className="container">
         <h1>Home</h1>
         <h2>Test</h2>
+        <h2>Test2</h2>
       </div>
     </LayoutDefault>
   );
