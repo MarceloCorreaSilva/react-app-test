@@ -18,12 +18,12 @@ jobs:
         run: yarn
       - uses: amondnet/vercel-action@v19
         with:
-          vercelToken: ${{ secrets.VERCEL_TOKEN }}
-          vercelOrgId: ${{ secrets.VERCEL_ORG_ID }}
-          vercelProjectId: ${{ secrets.VERCEL_PROJECT_ID }}
-          githubToken: ${{ secrets.GITHUB_TOKEN }}
-          sourceDirectory: "src"
-          # assignDomain: "preview.example.com"
+          vercel-token: ${{ secrets.VERCEL_TOKEN }} # Required
+          github-token: ${{ secrets.GITHUB_TOKEN }} #Optional 
+          vercel-args: '--prod' #Optional
+          vercel-org-id: ${{ secrets.VERCEL_ORG_ID}}  #Required
+          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID}} #Required 
+        # working-directory: ./
         # env:
         #   YOUR_ENV_1: ${{ secrets.YOUR_ENV_1 }}
         #   YOUR_ENV_2: ${{ secrets.YOUR_ENV_2 }}
